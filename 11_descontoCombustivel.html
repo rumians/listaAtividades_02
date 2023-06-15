@@ -14,12 +14,28 @@
     */
 
     //ENTRADA
-
-
+    const litros = Number(prompt("Quantos litros foram vendidos ?"))
+    const combustível = (prompt("Qual o tipo de combustivel?(A-álcool, G-gasolina)").toLowerCase())
+    let gasolina = 6.50
+    let alcool = 6.10
+    
     //PROCESSAMENTO
 
-    
+    if (litros > 20 ) {
+        gasolina = (gasolina * 0.06 - gasolina) * -1
+        alcool = (alcool * 0.05 - alcool) * -1
+    }
+    else {
+        gasolina = (gasolina * 0.04 - gasolina) * -1
+        alcool = (alcool * 0.03 - alcool) * -1
+    }
+
+    if (combustível === "a" || combustível === "alcool") {
+        alert (`O valor a ser pago com o desconto é de R$${litros * alcool}`).Math.round()
+    }
+    else {
+        alert (`O valor a ser pago com o desconto é de R$${litros * gasolina}`).Math.round()
+    }
+
     //SAÍDA
-
-
 </script>

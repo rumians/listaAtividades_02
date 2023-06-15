@@ -11,12 +11,19 @@
     */
 
     //ENTRADA
-
+    let num = Number(prompt(`Qual o numero voce deseja descobrir as centenas dezenas e unidades ?`));
+    
 
     //PROCESSAMENTO
 
-    
+    const centenas = Math.floor(num / 100);
+    num = num % 100;
+    const dezenas = Math.floor(num / 10);
+    num = num % 10;
+    const unidades = num 
+
     //SAÍDA
 
+    let resultado = alert(`O script nos fornece ${centenas} centenas , ${dezenas} dezenas ,${unidades} unidades`)
 
 </script>

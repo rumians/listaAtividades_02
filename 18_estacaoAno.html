@@ -1,3 +1,4 @@
+<meta charset="UTF-8">
 <script>
     /*
     //PROBLEMA
@@ -7,10 +8,48 @@
 
     //ENTRADA
 
+    const hemisfério = prompt("Qual o hemisferio que voce se encontra").toLowerCase()
+    const mes = prompt("Esta em qual mes do ano").toLowerCase()
 
     //PROCESSAMENTO
 
-    
+    if (hemisfério == "sul") {
+        if (mes == "janeiro" || mes == "fevereiro" || mes == "março") {
+            alert("Voce esta no verao")
+        }
+        else if (mes == "abril" || mes == "maio" || mes == "junho") {
+            alert("Voce esta no outono")
+        }
+        else if (mes == "julho" || mes == "agosto" || mes == "setembro") {
+            alert("Voce esta no inverno")
+        }
+        else if (mes == "outubro" || mes == "novembro" || mes == "dezembro") {
+            alert("Voce esta na primavera")
+        }
+        else {
+            alert(`insira os valores novamente!!!`)
+        }
+    }
+
+    if (hemisfério == "norte") {
+        if (mes == "janeiro" || mes == "fevereiro" || mes == "março" || mes == "marco") {
+            alert(`voce esta no inverno`)
+        }
+        else if (mes == "abril" || mes == "maio" || mes == "junho") {
+            alert(`voce esta no primavera`)
+        }
+        else if (mes == "julho" || mes == "agosto" || mes == "setembro") {
+            alert(`voce esta no verao`)
+        }
+        else if (mes == "outubro" || mes== "novembro" || mes == "dezembro") {
+            alert(`voce esta no outono`)
+        }
+        else {
+            alert(`insira os valores novamente!!!`)
+        }
+    }
+
+
     //SAÍDA
 
 

@@ -9,7 +9,22 @@
     // Entrada
 
     
+    const idade = Number(prompt("Insira a idade do seu cão:"));
+    const porte = prompt("Insira o porte do seu cão: (Responda com: pequeno, médio ou grande.)").toLowerCase()
+
     // Processamento
+    if (porte == "pequeno") {
+        const idadeHumana = (idade * 5).toFixed(1);
+        alert(`A idade humana do seu cão é de ${idadeHumana} anos.`);
+    }
+    if (porte == "medio" || porte == "médio") {
+        const idadeHumana = (idade * 6).toFixed(1);
+        alert(`A idade humana do seu cão é de ${idadeHumana} anos.`);
+    }
+    if (porte == "grande") {
+        const idadeHumana = (idade * 7).toFixed(1);
+        alert(`A idade humana do seu cão é de ${idadeHumana} anos.`);
+    }
 
     
     // Saída

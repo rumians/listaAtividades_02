@@ -7,9 +7,15 @@
 
     //ENTRADA
 
+    const num = Number (prompt("insira um numero").replace(",", ".")) ;
 
     //PROCESSAMENTO
-
+    if (Number.isInteger(num)) {
+        alert (`O numero é interio`);
+    }
+    else {
+        alert (`O numero é decimal`);
+    }
     
     //SAÍDA
 

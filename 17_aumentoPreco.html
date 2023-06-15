@@ -8,10 +8,25 @@
     
     // Entrada
 
-    
-    // Processamento
+    let produto = Number(prompt("Qual é o preço do produto?").replace(",","."));
 
+    // Processamento
+    if(produto <= 280 ) {
+      produto =  (produto * 0.20 + produto);
+    }
+    else if(produto <= 700 ) {
+      produto =  (produto * 0.15 + produto);
+    }
+    else if(produto <= 1500 ) {
+      produto =  (produto * 0.10 + produto);
+    }
+    else if(produto > 1500 ) {
+      produto =  (produto * 0.05 + produto);
+    }
+    else {
+        alert (`Opçao invalida`);
+    }
     
     // Saída
-
+    alert (`O seu produto com o acressimo de preço é R$${produto}.`);
 </script>

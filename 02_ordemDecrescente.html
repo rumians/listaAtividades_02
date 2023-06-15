@@ -1,3 +1,4 @@
+<meta charset="UTF-8">
 <script>
     /*
     //PROBLEMA
@@ -5,10 +6,16 @@
     */
 
     //ENTRADA
+    
+    var num1 = prompt(`diga um numero`);
+    var num2 = prompt(`diga outro numero`);
+    var num3 = prompt(`diga mais um numero`);
 
     
     //PROCESSAMENTO
-    
+    var max = Math.max(num1, num2, num3);
+    var min = Math.min(num1,num2,num3);
+    var midia = Number(num1) + Number(num2) + Number(num3) - Number(max) - Number( min);
     //SAÍDA
-    
+    alert (`os numeros em ordem decrescente sao, ${max}, ${midia}, ${min}`);
 </script>

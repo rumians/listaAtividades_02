@@ -10,10 +10,29 @@
 
     // Entrada
 
+    let notanum = Number(prompt("Qual foi a sua nota ?").replace(",","."))
     
     // Processamento
-
     
+    if ( notanum >= 9) {
+       alert ("Sua nota em conceito é A")
+    }
+    else if ( notanum >= 8) {
+        alert ("Sua nota em conceito é B")
+    }
+    else if ( notanum >= 7) {
+        alert ("Sua nota em conceito é C")
+    }
+    else if ( notanum >= 6) {
+        alert ("Sua nota em conceito é D")
+    }
+    else if ( notanum <= 5) {
+        alert ("Sua nota em conceito é E")
+    }
+    else {
+        alert ("Opçao invalida!!")
+    }
+
     // Saída
 
 </script>

@@ -1,3 +1,4 @@
+<meta charset="UTF-8">
 <script>
     /*
     //PROBLEMA
@@ -9,10 +10,107 @@
 
     //ENTRADA
 
-
+    let num = Number(prompt("Diga um numero"))
+    const operação = (prompt("Qual operaçao")).toLowerCase()
+    let num2 = Number(prompt("Diga outro numero"))
+    let ad = num + num2
+    let sub = num - num2
+    let mult = num * num2
+    let div = num / num2
     //PROCESSAMENTO
 
-    
+    if (operação == "mais" || operação == "+") {
+        let resultado = num + num2
+        alert(`Resultado da soma é ${ad}`)
+
+        if (resultado % 2 == 0) {
+            alert(`o numero é par`)
+        } else {
+            alert(`é impar`)
+        }
+        if (resultado >= 0) {
+            alert(`o numero é positivo'`)
+        }
+        else {
+            alert(`o numero é negativo`)
+        }
+        if (Number.isInteger(resultado)) {
+            alert(`Ele é um numero interio`)
+        }
+        else {
+            alert(`Ele é decimal`)
+        }
+
+    }
+    else if (operação == "menos" || operação == "-") {
+        let resultado = num - num2
+        alert(`O resultado da subtraçao é ${sub}`)
+
+        if (resultado % 2 == 0) {
+            alert(`o numero é par`)
+        } else {
+            alert(`é impar`)
+        }
+        if (resultado >= 0) {
+            alert(`o numero é positivo'`)
+        }
+        else {
+            alert(`o numero é negativo`)
+        }
+        if (Number.isInteger(resultado)) {
+            alert(`Ele é um numero interio`)
+        }
+        else {
+            alert(`Ele é decimal`)
+        }
+    }
+    else if (operação == "vezes" || operação == "*" || operação == "x") {
+        let resultado = num * num2
+        alert(`O resultado da multiplicaçao é ${mult}`)
+
+        if (resultado % 2 == 0) {
+            alert(`o numero é par`)
+        } else {
+            alert(`é impar`)
+        }
+        if (resultado >= 0) {
+            alert(`o numero é positivo'`)
+        }
+        else {
+            alert(`o numero é negativo`)
+        }
+        if (Number.isInteger(resultado)) {
+            alert(`Ele é um numero interio`)
+        }
+        else {
+            alert(`Ele é decimal`)
+        }
+    }
+    else if (operação == "divisao" || operação == "/") {
+        let resultado = num / num2
+        alert(`O resultado da divisao é ${div}`)
+
+        if (resultado % 2 == 0) {
+            alert(`o numero é par`)
+        } else {
+            alert(`é impar`)
+        }
+        if (resultado >= 0) {
+            alert(`o numero é positivo'`)
+        }
+        else {
+            alert(`o numero é negativo`)
+        }
+        if (Number.isInteger(resultado)) {
+            alert(`Ele é um numero interio`)
+        }
+        else {
+            alert(`Ele é decimal`)
+        }
+    }
+
+
+
     //SAÍDA
 
 
